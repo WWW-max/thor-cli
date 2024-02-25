@@ -1,3 +1,6 @@
 #!/usr/bin/env node
+const { program } = require('commander');
 
-console.log('Welcome use Thor-cli');
+program.name('thor-cli').usage('<command> [option]');
+
+program.parse(process.argv);
